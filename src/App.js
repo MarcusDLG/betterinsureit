@@ -26,12 +26,13 @@ function App() {
         <div className="App">
           <header className="App-header">
             <img src="BetterInsureItLogoSize.png" alt="logo" />
-            <p>Better Insure IT</p>
+            {/* multiSelect */}
+            {/* <Dropdown title="Individuals & Families" items={items} multiSelect /> */}
+            <Dropdown title="Individuals & Families" items={items} />
+            <Dropdown title="Business Owners" items={items} />
+            <Dropdown title="Turning 65+" items={items} />
+            <Dropdown title="Planning and Guidance" items={items} />
           </header>
-        </div>
-        <div>
-          {/* Take out multiSelect for only one choice */}
-          <Dropdown title="Individuals & Families" items={items} multiSelect />
         </div>
       </div>
     </>
