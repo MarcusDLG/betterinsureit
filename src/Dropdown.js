@@ -16,7 +16,9 @@ function Dropdown({ title, items = [], multiSelect = false }) {
       }
     } else {
       let selectionAfterRemoval = selection;
-      selectionAfterRemoval = selectionAfterRemoval.filter((current) => current.id !== item.id);
+      selectionAfterRemoval = selectionAfterRemoval.filter(
+        (current) => current.id !== item.id
+      );
       setSelection([...selectionAfterRemoval]);
     }
   }
